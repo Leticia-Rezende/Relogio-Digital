@@ -1,0 +1,46 @@
+:root {
+    --color-dark : #fcfaf9;
+    --color-white : #ba6f4d;
+    --color-light : #ba6f4d;
+    --color-purple : #5d15a5;
+}
+
+*{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding:  0 ;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Relogio{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.Relogio span{
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.Relogio span:not(:last-child)::after{
+    content: ':';
+    margin: 25px;
+    color: var(--color-light);
+}
+
+h2 strong{
+    color: var(--color-purple);
+}
